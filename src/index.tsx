@@ -4,6 +4,8 @@ import { BrowserRouter as Router, Route } from 'react-router-dom';
 import App from './App';
 import Orders from './components/Orders';
 import Order from './components/Order';
+import User from './components/User';
+import Login from './components/Login';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
@@ -13,6 +15,8 @@ ReactDOM.render(
       <Route exact path="/" component={App} />
       <Route path="/orders" component={Orders} />
       <Route path="/order/:orderName" component={Order} />
+      <Route path="/user/:user" component={User} />
+      <Route path="/login" component={Login} />
     </div>
   </Router>,
   document.getElementById('root') as HTMLElement

@@ -1,6 +1,11 @@
 import * as React from 'react';
 import { Table, Column, Cell } from '@blueprintjs/table';
 
+// blueprint styles
+import '../../styles/normalize.css';
+import '../../styles/blueprint.css';
+import '../../styles/table.css';
+
 interface OrderEntry {
     id: string;
     name: string;

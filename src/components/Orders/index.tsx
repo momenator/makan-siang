@@ -1,7 +1,11 @@
 import * as React from 'react';
 import { Link } from 'react-router-dom';
 
-class Orders extends React.Component<any, any> {
+// blueprint styles
+import '../../styles/normalize.css';
+import '../../styles/blueprint.css';
+
+export default class Orders extends React.Component<{}, {}> {
     render() {
         return (<div style={{ padding: 20 }}>
             <h2> Order makan siang </h2>
@@ -14,6 +18,7 @@ class Orders extends React.Component<any, any> {
             </div>
 
             <ul>
+                <li><Link to="/order/makan siang 17 july 2017">makan siang 17 july 2017</Link></li>
                 <li><Link to="/order/makan siang 13 july 2017">makan siang 13 july 2017</Link></li>
                 <li><Link to="/order/makan siang 12 july 2017">makan siang 12 july 2017</Link></li>
                 <li><Link to="/order/makan siang 11 july 2017">makan siang 11 july 2017</Link></li>
@@ -21,5 +26,3 @@ class Orders extends React.Component<any, any> {
         </div>);
     }
 }
-
-export default Orders;

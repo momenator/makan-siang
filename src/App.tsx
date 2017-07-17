@@ -1,18 +1,18 @@
 import * as React from 'react';
+import { Link } from 'react-router-dom';
 import './App.css';
-
-const logo = require('./logo.svg');
 
 class App extends React.Component<{}, {}> {
   render() {
     return (
       <div className="App">
         <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
+          <img src={"http://icon-icons.com/icons2/547/PNG/512/1455554408_line-18_icon-icons.com_53298.png"} 
+            className="App-logo" alt="logo" />
+          <h2 style={{ color: 'white' }}>makan-siang</h2>
         </div>
         <p className="App-intro">
-          To get started, edit <code>src/App.tsx</code> and save to reload.
+          login as <Link to="/orders">admin</Link> or as <Link to="/login">user</Link>
         </p>
       </div>
     );
