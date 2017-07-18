@@ -2,18 +2,33 @@ import * as React from 'react';
 import { Link } from 'react-router-dom';
 import './App.css';
 
+const makanSiangLogo = require('./resources/images/table.png');
+const orderLogo = require('./resources/images/order.png');
+const manageLogo = require('./resources/images/apron.png');
+const linkStyle = { textDecoration: 'none' };
+
 class App extends React.Component<{}, {}> {
   render() {
     return (
       <div className="App">
-        <div className="App-header">
-          <img src={"http://icon-icons.com/icons2/547/PNG/512/1455554408_line-18_icon-icons.com_53298.png"} 
-            className="App-logo" alt="logo" />
-          <h2 style={{ color: 'white' }}>makan-siang</h2>
+        <div className="App-section">
+          <div>
+            <img src={makanSiangLogo} className="App-logo" alt="logo" />
+            <h2 className="App-section-text">Makan Siang</h2>
+          </div>
         </div>
-        <p className="App-intro">
-          login as <Link to="/orders">admin</Link> or as <Link to="/login">user</Link>
-        </p>
+        <div className="App-section">
+          <Link to="/login" style={linkStyle}>
+            <img src={orderLogo} className="App-logo" alt="logo" />
+            <h2 className="App-section-text">Pesan Makanan</h2>
+          </Link>
+        </div>
+        <div className="App-section">
+          <Link to="/orders" style={linkStyle}>
+            <img src={manageLogo} className="App-logo" alt="logo" />
+            <h2 className="App-section-text" >Pengaturan</h2>
+          </Link>
+        </div>
       </div>
     );
   }

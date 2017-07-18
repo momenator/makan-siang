@@ -1,10 +1,33 @@
 .App {
   text-align: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 100vh;
+  width: 100vw;
+  color: black;
+  background-color: #f5f8fa;
+}
+
+.App-section-text {
+  font-size: 26px;
+  text-decoration: none;
+  font-family: fantasy;
+  margin: 20px;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
   height: 80px;
+  color: white;
+}
+
+.App-section {
+  flex: 1;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: space-around;
 }
 
 .App-header {
