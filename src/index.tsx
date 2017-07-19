@@ -6,6 +6,7 @@ import Orders from './components/Orders';
 import Order from './components/Order';
 import User from './components/User';
 import Login from './components/Login';
+import Manage from './components/Manage';
 import registerServiceWorker from './registerServiceWorker';
 import './index.css';
 
@@ -17,6 +18,7 @@ ReactDOM.render(
       <Route path="/order/:orderName" component={Order} />
       <Route path="/user/:user" component={User} />
       <Route path="/login" component={Login} />
+      <Route path="/manage" component={Manage} />
     </div>
   </Router>,
   document.getElementById('root') as HTMLElement

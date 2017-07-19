@@ -24,7 +24,7 @@ class App extends React.Component<{}, {}> {
           </Link>
         </div>
         <div className="App-section">
-          <Link to="/orders" style={linkStyle}>
+          <Link to="/manage" style={linkStyle}>
             <img src={manageLogo} className="App-logo" alt="logo" />
             <h2 className="App-section-text" >Pengaturan</h2>
           </Link>
